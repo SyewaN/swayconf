@@ -1,0 +1,104 @@
+{
+    "layer": "top",
+    "spacing": 0,
+    "height": 0,
+
+    "margin-top": 8,
+    "margin-right": 8,
+    "margin-bottom": 0,
+    "margin-left": 8,
+
+    "modules-left": [
+        "disk",
+        "memory",
+        "battery"
+    ],
+
+    "modules-center": [
+        "sway/workspaces"
+    ],
+
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "clock"
+    ],
+
+
+    "modules-left": [
+    "disk",
+    "memory",
+    "battery",
+    "sway/window"
+],
+
+ "sway/window": {
+    "format": "{}",
+    "max-length": 50
+},
+
+    "disk": {
+        "path": "/",
+        "format": "󰆼 {percentage_used}%",
+        "interval": 30,
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icons}",
+    "format-icons": {
+        "1": "Ⅰ", "2": "Ⅱ", "3": "Ⅲ", "4": "Ⅳ", "5": "Ⅴ",
+        "6": "Ⅵ", "7": "Ⅶ", "8": "Ⅷ", "9": "Ⅸ", "10": "Ⅹ"
+    }
+}
+
+    },
+
+    "clock": {
+        "format": "󰅐 {:%H:%M %d-%m-%Y}",
+        "tooltip": false
+    },
+
+    "network": {
+        "format-wifi": "󰖩 {bandwidthDownBits}",
+        "format-ethernet": "󰈀 {bandwidthDownBits}",
+        "format-disconnected": "󰈂 Disconnected",
+        "interval": 5,
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "format": "󰕾 {volume}%",
+        "format-muted": "󰖁 Muted",
+        "scroll-step": 5,
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": "󰍛 {percentage}%",
+        "interval": 2,
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+
+    "battery": {
+        "format": "󰁹 {capacity}%",
+        "interval": 5,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "tooltip": false
+    }
+}
