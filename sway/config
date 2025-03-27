@@ -129,9 +129,11 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-bar {
-     swaybar_command waybar
-}
+default_floating_border pixel 0
+default_border pixel 0
+floating_modifier $mod normal
+hide_edge_borders smart
+
 
 corner_radius 10
 blur enable
