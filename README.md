@@ -1,3 +1,5 @@
 # swayconf
-![screenshot](https://github.com/user-attachments/assets/de7af236-1ba8-4626-8dab-b45c8a6631ea)
-![screenshot](https://github.com/user-attachments/assets/2dbb32a7-d247-4498-9666-e7f5fb2fd145)
+
+![screenshot](https://github.com/user-attachments/assets/b09c69bb-6ec3-4277-a902-5e6f3867b7b1)
+
+![resim](https://github.com/user-attachments/assets/1f712434-c344-4f3f-aaf5-f230616c829e)
