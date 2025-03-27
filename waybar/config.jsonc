@@ -39,7 +39,7 @@
 
     "disk": {
         "path": "/",
-        "format": "󰆼 {percentage_used}%",
+        "format": "󰆼  {percentage_used}%",
         "interval": 30,
         "states": {
             "warning": 70,
@@ -63,20 +63,20 @@
     },
 
     "clock": {
-        "format": "󰅐 {:%H:%M %d-%m-%Y}",
+        "format": "󰅐  {:%H:%M %d-%m-%Y}",
         "tooltip": false
     },
 
     "network": {
-        "format-wifi": "󰖩 {bandwidthDownBits}",
-        "format-ethernet": "󰈀 {bandwidthDownBits}",
+        "format-wifi": "󰖩   {bandwidthDownBits}",
+        "format-ethernet": "󰈀  {bandwidthDownBits}",
         "format-disconnected": "󰈂 Disconnected",
         "interval": 5,
         "tooltip": false
     },
 
     "pulseaudio": {
-        "format": "󰕾 {volume}%",
+        "format": "󰕾  {volume}%",
         "format-muted": "󰖁 Muted",
         "scroll-step": 5,
         "on-click": "pavucontrol",
@@ -84,7 +84,7 @@
     },
 
     "memory": {
-        "format": "󰍛 {percentage}%",
+        "format": "󰍛  {percentage}%",
         "interval": 2,
         "states": {
             "warning": 70,
@@ -93,7 +93,7 @@
     },
 
     "battery": {
-        "format": "󰁹 {capacity}%",
+        "format": "󰁹  {capacity}%",
         "interval": 5,
         "states": {
             "warning": 20,
