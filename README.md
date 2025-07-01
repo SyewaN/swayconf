@@ -29,9 +29,6 @@ sudo xbps-install -S sway waybar foot fuzzel dunst shotman
 
 # Audio & extras
 sudo xbps-install -S pipewire pavucontrol polkit-gnome udiskie
-
-# Auto-tiling (AUR equivalent için kendi build'in gerekebilir)
-# git clone + make install autotiling
 ```
 
 ## 🚀 Setup
