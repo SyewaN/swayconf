@@ -1,6 +1,95 @@
-# swayconf
+# Void + Sway Rice
 
-![screenshot](https://github.com/user-attachments/assets/b09c69bb-6ec3-4277-a902-5e6f3867b7b1)
+*Minimal Wayland setup*
 
-![Screenshot_2025-07-01_15-55-28](https://github.com/user-attachments/assets/5e8f576d-effe-4381-9ae9-aa5baba791ec)
-![Uploading Screenshot_2025-06-28_19-04-43.png…]()
+![Desktop]( ![Screenshot_2025-07-01_16-29-27](https://github.com/user-attachments/assets/143873ee-10be-401b-bb33-3ce3e9693794))
+
+## ⚡ System Info
+
+- **OS**: Void Linux
+- **WM**: Sway
+- **Terminal**: Alacritty
+- **Bar**: Waybar 
+- **Launcher**: Fuzzel
+- **Notifications**: Dunst
+
+## 🎨 Features
+
+- **Auto Tiling**: Automatic window layouts
+- **Roman Numerals**: Workspace icons (Ⅰ-Ⅹ)
+- **Gruvbox Colors**: Consistent theming
+- **Minimal UI**: Clean, distraction-free
+
+## 📦 Quick Install
+
+```bash
+# Core packages
+sudo xbps-install -S sway waybar foot fuzzel dunst shotman
+
+# Audio & extras
+sudo xbps-install -S pipewire pavucontrol polkit-gnome udiskie
+
+# Auto-tiling (AUR equivalent için kendi build'in gerekebilir)
+# git clone + make install autotiling
+```
+
+## 🚀 Setup
+
+```bash
+git clone https://github.com/yourusername/void-sway-rice.git
+cd void-sway-rice
+
+# Backup + install
+cp -r ~/.config/{sway,waybar} ~/.config/ 2>/dev/null || true
+cp -r config/* ~/.config/
+
+# Start foot daemon
+systemctl --user enable --now foot.service
+```
+
+## ⚙️ Configuration
+
+## ⌨️ Keybinds
+
+| Key | Action |
+|-----|--------|
+| `Super + Return` | Terminal |
+| `Super + D` | Fuzzel launcher |
+| `Super + Q` | Close window |
+| `Super + Escape` | Lock screen |
+| `Super + Home` | Logout menu |
+| `Super + Shift + R/T/Y` | Screenshots |
+
+
+## 🎨 Customization
+
+**Wallpaper**: Edit `~/.config/sway/config` line with `output * bg`  
+**Colors**: Modify `~/.config/waybar/style.css` for Gruvbox variants  
+**Blur**: Adjust `blur_passes` in sway config (current: 8)
+
+## 🔧 Quick Fixes
+
+```bash
+# Audio issues
+sv up pipewire
+
+# Screenshot not working  
+sudo xbps-install -S shotman
+
+# Foot daemon not starting
+foot -s &
+```
+
+## 📁 File Structure
+
+```
+config/
+├── sway/config          # Main sway config
+└── waybar/
+    ├── config           # Bar modules  
+    └── style.css        # Gruvbox styling
+```
+
+---
+
+⭐ **Star** if you like this setup!  
