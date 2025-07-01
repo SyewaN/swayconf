@@ -37,16 +37,7 @@ sudo xbps-install -S pipewire pavucontrol polkit-gnome udiskie
 ## 🚀 Setup
 
 ```bash
-git clone https://github.com/yourusername/void-sway-rice.git
-cd void-sway-rice
-
-# Backup + install
-cp -r ~/.config/{sway,waybar} ~/.config/ 2>/dev/null || true
-cp -r config/* ~/.config/
-
-# Start foot daemon
-systemctl --user enable --now foot.service
-```
+git clone https://github.com/SyewaN/swayconf.git
 
 ## ⚙️ Configuration
 
