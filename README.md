@@ -14,30 +14,6 @@
 - **Launcher**: Fuzzel
 - **Notifications**: Dunst
 
-## 🎨 Features
-
-- **Auto Tiling**: Automatic window layouts
-- **Roman Numerals**: Workspace icons (Ⅰ-Ⅹ)
-- **Gruvbox Colors**: Consistent theming
-- **Minimal UI**: Clean, distraction-free
-
-## 📦 Quick Install
-
-```bash
-# Core packages
-sudo xbps-install -S sway waybar foot fuzzel dunst shotman
-
-# Audio & extras
-sudo xbps-install -S pipewire pavucontrol polkit-gnome udiskie
-```
-
-## 🚀 Setup
-
-```bash
-git clone https://github.com/SyewaN/swayconf.git
-
-## ⚙️ Configuration
-
 ## ⌨️ Keybinds
 
 | Key | Action |
@@ -48,26 +24,6 @@ git clone https://github.com/SyewaN/swayconf.git
 | `Super + Escape` | Lock screen |
 | `Super + Home` | Logout menu |
 | `Super + Shift + R/T/Y` | Screenshots |
-
-
-## 🎨 Customization
-
-**Wallpaper**: Edit `~/.config/sway/config` line with `output * bg`  
-**Colors**: Modify `~/.config/waybar/style.css` for Gruvbox variants  
-**Blur**: Adjust `blur_passes` in sway config (current: 8)
-
-## 🔧 Quick Fixes
-
-```bash
-# Audio issues
-sv up pipewire
-
-# Screenshot not working  
-sudo xbps-install -S shotman
-
-# Foot daemon not starting
-foot -s &
-```
 
 ## 📁 File Structure
 
